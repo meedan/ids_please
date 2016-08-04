@@ -17,8 +17,9 @@ class IdsPlease
                   :data,
                   :counts
 
-      def initialize(link)
+      def initialize(link, page_source = nil)
         @link = link
+        @page_source = page_source
       end
 
       def grab_link(_link)
